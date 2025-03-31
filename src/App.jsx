@@ -1,7 +1,11 @@
-import { Typography } from "@mui/material";
+import Text from "../src/UI/basic/text/Text";
 
 const App = () => {
-  return <Typography>ASTA WAR</Typography>
-}
+  return (
+    <Text color="white" fontWeight="bold">
+      ASTA WAR
+    </Text>
+  );
+};
 
 export default App;
