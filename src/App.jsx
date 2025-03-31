@@ -1,6 +1,7 @@
+import { Typography } from "@mui/material";
 
 const App = () => {
-  return <div>ASTA WAR</div>
+  return <Typography>ASTA WAR</Typography>
 }
 
 export default App;
