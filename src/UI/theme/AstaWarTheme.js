@@ -1,67 +1,78 @@
-// theme.ts
+// Theme.js
 import { createTheme } from '@mui/material/styles';
-import { red, green, blueGrey } from '@mui/material/colors';
+
+// Importa il font Inter da Google Fonts
+import '@fontsource/inter'; // Assicurati che sia installato: npm install @fontsource/inter
 
 const theme = createTheme({
-  typography: {
-    fontFamily: 'Inter, sans-serif',
-    h1: {
-      fontWeight: 800,
-      fontSize: '3rem',
-    },
-    h2: {
-      fontWeight: 700,
-    },
-    button: {
-      textTransform: 'none',
-      fontWeight: 600,
-    },
-  },
   palette: {
-    mode: 'dark',
-    primary: {
-      main: '#F5B301', // brillante, sportivo
-    },
-    secondary: {
-      main: '#FF3366', // accento forte per azione
+    background: {
+      default: '#1D4225',
     },
     text: {
       primary: '#F2E94D',
-      secondary: '#8B949E',
-    },
-    error: {
-      main: red.A400,
-    },
-    success: {
-      main: green.A400,
     },
   },
-  shape: {
-    borderRadius: 16,
+  typography: {
+    fontFamily: 'Inter',
+    h1: {
+      fontSize: '3rem', // 48px
+      fontWeight: 400,
+    },
+    h2: {
+      fontSize: '2.5rem', // 40px
+      fontWeight: 400,
+    },
+    h3: {
+      fontSize: '2rem', // 32px
+      fontWeight: 400,
+    },
+    h4: {
+      fontSize: '1.75rem', // 28px
+      fontWeight: 400,
+    },
+    h5: {
+      fontSize: '1.5rem', // 24px
+      fontWeight: 400,
+    },
+    h6: {
+      fontSize: '1.25rem', // 20px
+      fontWeight: 400,
+    },
+    h7: {
+      fontSize: '1.125rem', // 18px
+      fontWeight: 400,
+      color: '#F2E94D',
+    },
+    h8: {
+      fontSize: '1rem', // 16px
+      fontWeight: 400,
+      color: '#F2E94D',
+    },
+    h9: {
+      fontSize: '0.875rem', // 14px
+      fontWeight: 400,
+      color: '#F2E94D',
+    },
+    subtitle1: {
+      fontSize: '1rem',     // 16px
+      fontWeight: 400,
+      lineHeight: 1.75,
+    },
+    subtitle2: {
+      fontSize: '0.875rem', // 14px
+      fontWeight: 500,
+      lineHeight: 1.57,
+    },
+    allVariants: {
+      color: '#F2E94D', // Applica il colore anche a tutte le varianti
+    },
   },
   components: {
-    MuiButton: {
+    MuiCssBaseline: {
       styleOverrides: {
-        root: {
-          borderRadius: 12,
-          fontWeight: 600,
-          padding: '10px 20px',
-        },
-      },
-    },
-    MuiCard: {
-      styleOverrides: {
-        root: {
-          backgroundColor: '#1C2128',
-          boxShadow: '0 8px 30px rgba(0,0,0,0.3)',
-          borderRadius: 20,
-        },
-      },
-    },
-    MuiPaper: {
-      styleOverrides: {
-        root: {
-          backgroundImage: 'none',
+        body: {
+          backgroundColor: '#1D4225',
         },
       },
     },
