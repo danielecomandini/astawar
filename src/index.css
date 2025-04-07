@@ -10,16 +10,16 @@ body {
   font-family: 'Quicksand', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: radial-gradient(#4C9A2A, #053339);
+  background-color: #1D4225;
   color: #e1eeeb;
   min-height: 100vh;
 }
 
 #content {
-  max-width: 60rem;
+  max-width: 85rem;
   margin: 2rem auto;
   padding: 2rem;
-  background: radial-gradient(#0b201d, #021619);
+  background-color: #0B201D;
   border-radius: 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
