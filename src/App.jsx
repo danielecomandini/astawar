@@ -3,10 +3,11 @@ import {
   CssBaseline,
   Box,
   Typography,
-  Button,
 } from "@mui/material";
 import AstaWarTheme from "./UI/themes/AstaWarTheme";
 import AWButton from "./UI/elements/buttons/AWButton";
+
+import './index.css'
 
 const App = () => {
   return (
@@ -26,12 +27,7 @@ const App = () => {
         <AWButton variant="contained">CONTAINED</AWButton>
         <br />
       </Box>
-      {Array.from({ length: 7 }, (_, i) => (
-        <div key={i}>
-          <Typography style={{
-          }} variant={`h${i+1}`}>TESTO QUI</Typography>
-        </div>
-      ))}
+      <Typography variant="h1">TESTO QUI</Typography>
     </ThemeProvider>
   );
 };

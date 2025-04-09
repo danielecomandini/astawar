@@ -30,7 +30,7 @@ const AstaWarTheme = createTheme({
     },
   },
   typography: {
-    fontFamily: AW_FONT_FAMILY,
+    fontFamily: 'Quicksand, sans-serif',
     h1: {
         fontSize: '6rem',
         fontWeight: 300,
