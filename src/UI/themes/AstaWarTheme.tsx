@@ -2,7 +2,7 @@ import { createTheme } from '@mui/material/styles';
 
 // Define the custom colors
 export const AW_COLORS = {
-  background: '#1D4225', // Green background
+  background: '#DDDDDD', // Green background
   text: '#FFFFFF',       // White text
   highlight: '#FFEB3B',  // Yellow highlight
   cardHeader: '#333333',  // Darg grey
