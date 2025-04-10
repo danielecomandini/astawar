@@ -5,6 +5,8 @@ export const AW_COLORS = {
   background: '#1D4225', // Green background
   text: '#FFFFFF',       // White text
   highlight: '#FFEB3B',  // Yellow highlight
+  cardHeader: '#333333',  // Darg grey
+  check: '#339955',       // Check
 };
 
 export const AW_FONT_FAMILY = 'Quicksand'
@@ -77,7 +79,7 @@ const AstaWarTheme = createTheme({
     //     lineHeight: 1.43,
     //   },
   },
-  components: {
+  components: {    
     MuiButton: {
       styleOverrides: {
         root: {
@@ -99,6 +101,14 @@ const AstaWarTheme = createTheme({
         },
       },
     },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          backgroundColor: '#CCCCCC',
+          borderRadius: '10px'
+        }  
+      }
+    }
   },
 });
 

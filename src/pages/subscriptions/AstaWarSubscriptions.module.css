@@ -1,0 +1,12 @@
+.subscription-plans-container {
+  display: flex;
+  justify-content: center;
+  gap: 3;
+  flex-wrap: "wrap";  
+}
+
+.subscription-plans-card {
+  width: 25%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
