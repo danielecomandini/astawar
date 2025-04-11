@@ -1,9 +1,11 @@
+import { AW_COLORS } from "../../../UI/themes/AstaWarTheme";
+
 const PLANS = [
   {
     title: "Basic",
     price: "€ 4,99",
     popular: true,
-    color: '#1976D2',
+    color: AW_COLORS.green,
     description: "Il piano perfetto per i principianti del Fantacalcio.",
     features: [
       "Aste online in tempo reale",
@@ -16,7 +18,7 @@ const PLANS = [
   {
     title: "Premium",
     price: "€ 7,99",
-    color: '#1976D2',
+    color: AW_COLORS.green,
     recommended: true,
     description: "Per i Fantallenatori che vogliono di più.",
     features: [
@@ -31,7 +33,7 @@ const PLANS = [
   {
     title: "Manager",
     price: "€ 12,99",
-    color: '#1976D2',
+    color: AW_COLORS.green,
     description: "L'ultima parola in fatto di Fantacalcio.",
     features: [
       "Tutto del piano Premium",
