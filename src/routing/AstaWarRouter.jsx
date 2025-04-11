@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AstaWarSubscriptionIndex from "../pages/subscriptions/AstaWarSubscriptionsIndex";
+import AstaWarSubscriptionIndex from "../pages/subscriptions/AstaWarSubscriptionIndex";
 
 const AstaWarRouter = () => {
   return (

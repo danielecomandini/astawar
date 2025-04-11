@@ -2,11 +2,21 @@ import { createTheme } from '@mui/material/styles';
 
 // Define the custom colors
 export const AW_COLORS = {
-  background: '#DDDDDD', // Green background
-  text: '#FFFFFF',       // White text
-  highlight: '#FFEB3B',  // Yellow highlight
-  cardHeader: '#333333',  // Darg grey
-  check: '#339955',       // Check
+  background: '#DDDDDD', // Background Color
+  text:       '#333333', // Text Color
+  highlight:  '#FFEB3B', // Important Color
+  cardHeader: '#333333', // Card Header
+  check:      '#339955', // Check Icon
+  black:      '#000000',
+  white:      '#FFFFFF',
+  blu:        '#1976D2',
+  yellow:     '#FBC02D',
+  orange:     '#FB8C00',
+  green:      '#43A047',
+  red:        '#E53935',
+  purple:     '#8E24AA',
+  grey:       '#9E9E9E',
+  darkGrey:   '#6B6B6B'
 };
 
 export const AW_FONT_FAMILY = 'Quicksand'
@@ -105,7 +115,7 @@ const AstaWarTheme = createTheme({
       styleOverrides: {
         root: {
           backgroundColor: '#CCCCCC',
-          borderRadius: '10px'
+          borderRadius: '10px',
         }  
       }
     }

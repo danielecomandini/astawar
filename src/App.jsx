@@ -1,4 +1,3 @@
-import { Typography } from "@mui/material";
 import AstaWarRouter from "./routing/AstaWarRouter";
 
 const App = () => {
