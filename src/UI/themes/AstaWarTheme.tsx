@@ -9,7 +9,7 @@ export const AW_COLORS = {
   check:      '#339955', // Check Icon
   black:      '#000000',
   white:      '#FFFFFF',
-  blu:        '#1976D2',
+  blue:        '#1976D2',
   yellow:     '#FBC02D',
   orange:     '#FB8C00',
   green:      '#43A047',
@@ -20,6 +20,8 @@ export const AW_COLORS = {
 };
 
 export const AW_FONT_FAMILY = 'Quicksand'
+// export const AW_FONT_FAMILY = 'Times New Roman'
+
 
 // Create the theme
 const AstaWarTheme = createTheme({
@@ -33,16 +35,16 @@ const AstaWarTheme = createTheme({
       secondary: AW_COLORS.highlight,
     },
     primary: {
-      main: AW_COLORS.highlight,
+      main: AW_COLORS.green,
       contrastText: '#000000',
     },
     secondary: {
-      main: AW_COLORS.text,
+      main: AW_COLORS.orange,
       contrastText: AW_COLORS.background,
     },
   },
   typography: {
-    fontFamily: 'Quicksand, sans-serif',
+    fontFamily: AW_FONT_FAMILY,
     h1: {
         fontSize: '6rem',
         fontWeight: 300,
