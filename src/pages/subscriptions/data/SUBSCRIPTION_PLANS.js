@@ -1,14 +1,14 @@
 const PLANS = [
   {
     title: "Basic",
-    price: "€ 2,99",
+    price: "€ 4,99",
     popular: true,
-    color: '#FB8C00',
+    color: '#1976D2',
     description: "Il piano perfetto per i principianti del Fantacalcio.",
     features: [
       "Aste online in tempo reale",
-      "Gestione di 1 lega",
-      "Fino a 8 partecipanti",
+      "Partecipazione a 3 leghe",
+      "Massimo di 8 partecipanti per lega",
       "Supporto email",
     ],
     buttonText: "Inizia con Basic",
@@ -16,13 +16,13 @@ const PLANS = [
   {
     title: "Premium",
     price: "€ 7,99",
-    color: '#43A047',
+    color: '#1976D2',
     recommended: true,
     description: "Per i Fantallenatori che vogliono di più.",
     features: [
       "Tutto del piano Basic",
-      "Gestione fino a 3 leghe",
-      "Fino a 16 partecipanti per lega",
+      "Gestione fino a 5 leghe",
+      "Massimo di 12 partecipanti per lega",
       "Statistiche avanzate",
       "Supporto prioritario",
     ],
@@ -30,7 +30,7 @@ const PLANS = [
   },
   {
     title: "Manager",
-    price: "€ 9,99",
+    price: "€ 12,99",
     color: '#1976D2',
     description: "L'ultima parola in fatto di Fantacalcio.",
     features: [
@@ -38,7 +38,6 @@ const PLANS = [
       "Leghe illimitate",
       "Partecipanti illimitati",
       "Algoritmi di suggerimento IA",
-      "Supporto 24/7",
       "API per integrazioni",
     ],
     buttonText: "Inizia con Manager",

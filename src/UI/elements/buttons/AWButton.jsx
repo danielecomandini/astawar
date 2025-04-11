@@ -8,7 +8,7 @@ const AWButton = ({ children, ...props }) => {
       }}
       {...props}
     >
-      TESTO QUI
+      {children}
     </Button>
   );
 };

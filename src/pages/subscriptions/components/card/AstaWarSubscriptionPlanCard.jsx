@@ -1,6 +1,9 @@
 import { Card } from "@mui/material";
 import PlanName from "./PlanName";
 import PlanPrice from "./PlanPrice";
+import PlanDescription from "./PlanDescription";
+import PlanFunctionalities from "./PlanFunctionalities";
+import PlanButton from "./PlanButton";
 
 const AstaWarSubscriptionPlanCard = ({plan}) => {
   return (
@@ -12,9 +15,9 @@ const AstaWarSubscriptionPlanCard = ({plan}) => {
     >
       <PlanName plan={plan} />
       <PlanPrice plan={plan} />
-      <div>PLAN DESCRIPTION</div>
-      <div>PLAN FUNCTIONALITIES</div>
-      <div>BUTTON</div>
+      <PlanDescription plan={plan} />
+      <PlanFunctionalities plan={plan} />
+      <PlanButton plan={plan} />
     </Card>
   );
 };
