@@ -7,7 +7,6 @@ const AstaWarSubscriptionIndex = () => {
       <div>HEADER</div>
       <AstaWarSubscriptionPlans plans={PLANS} />
       <div>TABLE</div>
-      <div>FOOTER</div>
     </div>
   );
 };
