@@ -2,8 +2,15 @@ import { Box } from "@mui/material";
 import AWText from "../../../UI/elements/texts/AWText";
 import { AW_COLORS } from "../../../UI/themes/AstaWarTheme";
 import AWButton from "../../../UI/elements/buttons/AWButton";
+import { useNavigate } from "react-router-dom";
 
 const AstaWarSubscriptionHeader = () => {
+  const navigate = useNavigate();
+
+  const onClickButtonHandler = () => {
+    navigate("/home");
+  };
+
   return (
     <Box
       sx={{
@@ -20,17 +27,25 @@ const AstaWarSubscriptionHeader = () => {
           fantacalcio insieme ai tuoi amici.
         </AWText>
         <AWText fontWeight="bold" variant="h5">
-          Sfrutta la potenza dell'AI e mettila a tua disposizione per costruire la squadra dei tuoi sogni!
+          Sfrutta la potenza dell'AI e mettila a tua disposizione per costruire
+          la squadra dei tuoi sogni!
         </AWText>
-        <AWButton style={{
-            marginTop: '15px',
-            marginBottom: '10px',
-            backgroundColor: AW_COLORS.green
-        }}>Prova Gratuita 7 giorni</AWButton>
-        <hr style={{
-            height: '3px',
-            backgroundColor: AW_COLORS.green
-        }} />
+        <AWButton
+          style={{
+            marginTop: "15px",
+            marginBottom: "10px",
+            backgroundColor: AW_COLORS.green,
+          }}
+          onClick={onClickButtonHandler}
+        >
+          Prova Gratuita 7 giorni
+        </AWButton>
+        <hr
+          style={{
+            height: "3px",
+            backgroundColor: AW_COLORS.green,
+          }}
+        />
       </div>
     </Box>
   );
