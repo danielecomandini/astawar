@@ -8,8 +8,9 @@ import { ListItem } from "@mui/material";
 import { ListItemButton } from "@mui/material";
 import { ListItemIcon } from "@mui/material";
 import { ListItemText } from "@mui/material";
-import { faCalendar, faUsers } from "@fortawesome/free-solid-svg-icons";
 import AW_Icon from "../../../UI/elements/icons/AWIcon";
+import { MENU } from "../../../assets/menu/Menu";
+import { AW_COLORS } from "../../../UI/themes/AstaWarTheme";
 
 const AstaWarMenuPanel = ({ showMenu, onCloseHandler }) => {
   const onMenuClickHandler = () => {
@@ -17,38 +18,35 @@ const AstaWarMenuPanel = ({ showMenu, onCloseHandler }) => {
   };
 
   const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation" onClick={onMenuClickHandler}>
+    <Box
+      sx={{ width: 250, backgroundColor: AW_COLORS.white }}
+      role="presentation"
+      onClick={onMenuClickHandler}
+    >
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? (
-                  <AW_Icon icon={faCalendar} />
-                ) : (
-                  <AW_Icon icon={faUsers} />
-                )}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton onClick={onMenuClickHandler}>
-              <ListItemIcon>
-                {index % 2 === 0 ? (
-                  <AW_Icon icon={faCalendar} />
-                ) : (
-                  <AW_Icon icon={faUsers} />
-                )}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
+        {MENU.map((menu, idx) => (
+          <>
+            {idx !== 0 && <Divider />}
+            {menu.functionalities.map((funct, idx) => (
+              <ListItem
+                key={idx}
+                disablePadding
+                sx={{
+                  color: AW_COLORS.green,
+                }}
+              >
+                <ListItemButton>
+                  <ListItemIcon>
+                    <AW_Icon icon={funct.icon} color={AW_COLORS.green} />
+                  </ListItemIcon>
+                  <ListItemText
+                    primary={funct.label}
+                    sx={{ fontWeight: "bold" }}
+                  />
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </>
         ))}
       </List>
     </Box>
@@ -57,7 +55,11 @@ const AstaWarMenuPanel = ({ showMenu, onCloseHandler }) => {
   return (
     <div>
       <Button onClick={onMenuClickHandler}>Open drawer</Button>
-      <Drawer open={showMenu} onClose={onMenuClickHandler}>
+      <Drawer
+        open={showMenu}
+        sx={{ backgroundColor: AW_COLORS.white }}
+        onClose={onMenuClickHandler}
+      >
         {DrawerList}
       </Drawer>
     </div>
