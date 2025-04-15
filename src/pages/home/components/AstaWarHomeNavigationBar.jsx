@@ -4,7 +4,10 @@ import AW_Icon from "../../../UI/elements/icons/AWIcon";
 import { AW_COLORS } from "../../../UI/themes/AstaWarTheme";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-const AstaWarHomeNavigationBar = () => {
+const AstaWarHomeNavigationBar = ({ showMenu, onClickHandler }) => {
+  const onClickMenuHandler = () => {
+    onClickHandler(!showMenu);
+  };
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed">
@@ -19,6 +22,7 @@ const AstaWarHomeNavigationBar = () => {
             color="inherit"
             aria-label="menu"
             sx={{ mr: 2 }}
+            onClick={onClickMenuHandler}
           >
             <AW_Icon icon={faBars} color={AW_COLORS.green} />
           </IconButton>
