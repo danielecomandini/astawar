@@ -10,6 +10,7 @@ const AstaWarRouter = () => {
         <Route path="/subscription" element={<AstaWarSubscriptionIndex />} />
         <Route path="/action" element={<div>ACTION</div>} />
         <Route path="/contact" element={<div>CONTACT</div>} />
+        <Route path="/calciatori" element={<div>CALCIATORI</div>} />
         <Route path="*" element={<div>UNDEFINED</div>} />
       </Routes>
     </Router>

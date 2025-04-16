@@ -11,10 +11,17 @@ import { ListItemText } from "@mui/material";
 import AW_Icon from "../../../UI/elements/icons/AWIcon";
 import { MENU } from "../../../assets/menu/Menu";
 import { AW_COLORS } from "../../../UI/themes/AstaWarTheme";
+import { useNavigate } from "react-router-dom";
 
 const AstaWarMenuPanel = ({ showMenu, onCloseHandler }) => {
+  const navigate = useNavigate();
+
   const onMenuClickHandler = () => {
     onCloseHandler(!showMenu);
+  };
+
+  const onItemButtonClick = (routeTo) => {
+    navigate(routeTo);
   };
 
   const DrawerList = (
@@ -35,7 +42,9 @@ const AstaWarMenuPanel = ({ showMenu, onCloseHandler }) => {
                   color: AW_COLORS.green,
                 }}
               >
-                <ListItemButton>
+                <ListItemButton
+                  onClick={() => onItemButtonClick(funct.routeTo)}
+                >
                   <ListItemIcon>
                     <AW_Icon icon={funct.icon} color={AW_COLORS.green} />
                   </ListItemIcon>

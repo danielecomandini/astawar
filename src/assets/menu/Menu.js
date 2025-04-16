@@ -1,6 +1,7 @@
 import {
   faCalendar,
   faCreditCard,
+  faHammer,
   faKey,
   faUserPlus,
   faUsers,
@@ -10,8 +11,9 @@ export const MENU = [
   {
     label: "ASTA",
     functionalities: [
-      { label: "Gestisci Calendario", icon: faCalendar },
-      { label: "Gestisci Calciatori", icon: faUsers },
+      { label: "Gestisci Asta", icon: faHammer, routeTo: '/asta' },
+      { label: "Gestisci Calendario", icon: faCalendar, routeTo: '/calendario' },
+      { label: "Gestisci Calciatori", icon: faUsers, routeTo: '/calciatori' },
     ],
   },
   {
