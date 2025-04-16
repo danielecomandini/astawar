@@ -9,7 +9,6 @@ body {
   font-family: 'Quicksand', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1D4225;
   color: #e1eeeb;
   min-height: 100vh;
 }

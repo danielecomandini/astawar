@@ -2,11 +2,9 @@ import { createTheme } from '@mui/material/styles';
 
 // Define the custom colors
 export const AW_COLORS = {
-  background: '#DDDDDD', // Background Color
+  background: '#FFFFFF', // Background Color
   text:       '#333333', // Text Color
-  highlight:  '#FFEB3B', // Important Color
-  cardHeader: '#333333', // Card Header
-  check:      '#339955', // Check Icon
+  highlight:  '#43A047', // Important Color
   black:      '#000000',
   white:      '#FFFFFF',
   blue:        '#1976D2',
@@ -74,22 +72,7 @@ const AstaWarTheme = createTheme({
         fontSize: '1.25rem',
         fontWeight: 500,
         lineHeight: 1.6,
-      },
-    //   h7: {
-    //     fontSize: '1.125rem',
-    //     fontWeight: 500,
-    //     lineHeight: 1.6,
-    //   },
-    //   h8: {
-    //     fontSize: '1rem',
-    //     fontWeight: 500,
-    //     lineHeight: 1.5,
-    //   },
-    //   h9: {
-    //     fontSize: '0.875rem',
-    //     fontWeight: 500,
-    //     lineHeight: 1.43,
-    //   },
+      }
   },
   components: {    
     MuiButton: {

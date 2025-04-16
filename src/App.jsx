@@ -1,8 +1,10 @@
-import AstaWarRouter from "./routing/AstaWarRouter";
+import Header from "./components/Haeder";
 
 const App = () => {
   return (
-    <AstaWarRouter />
+    <>
+      <Header>ASTA WAR</Header>
+    </>
   );
 };
 
