@@ -7,8 +7,8 @@ const Header = ({ children }) => {
   const version = "beta";
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+    <Box sx={{ flexGrow: 1, zIndex: 10000000 }}>
+      <AppBar position="fixed">
         <Toolbar
           sx={{
             backgroundColor: AW_COLORS.background,

@@ -1,18 +1,5 @@
-import Header from "./components/Haeder";
-import Menu from "./components/Menu";
+import AstaWarRouting from "./routing/AstaWarRouting";
 
-const App = () => {
-  return (
-    <>
-      <Header>ASTA WAR</Header>
-      <section>
-        <div style={{ display: "flex" }}>
-          <Menu />
-          <div>CONTENT</div>
-        </div>
-      </section>
-    </>
-  );
-};
-
-export default App;
+export default function App() {
+  return <AstaWarRouting />;
+}
