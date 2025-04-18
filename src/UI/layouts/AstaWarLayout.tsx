@@ -1,10 +1,9 @@
 import AstaWarHeader from "./AstaWarHeader";
 import AstaWarMenu from "./AstaWarMenu";
 
-export default function App() {
+const AstaWarLayout = () => {
   return (
     <>
-      <AstaWarHeader />
       <div
         style={{
           display: "flex",
@@ -12,6 +11,9 @@ export default function App() {
       >
         <AstaWarMenu />
       </div>
+      <AstaWarHeader />
     </>
   );
-}
+};
+
+export default AstaWarLayout;

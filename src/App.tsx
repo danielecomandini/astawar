@@ -1,17 +1,11 @@
 import AstaWarHeader from "./UI/layouts/AstaWarHeader";
+import AstaWarLayout from "./UI/layouts/AstaWarLayout";
 import AstaWarMenu from "./UI/layouts/AstaWarMenu";
 
 export default function App() {
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-        }}
-      >
-        <AstaWarMenu />
-      </div>
-      <AstaWarHeader />
+      <AstaWarLayout />
     </>
   );
 }
