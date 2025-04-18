@@ -1,5 +1,3 @@
-import AstaWarRouting from "./routing/AstaWarRouting";
-
 export default function App() {
-  return <AstaWarRouting />;
+  return <div>TEST</div>;
 }
