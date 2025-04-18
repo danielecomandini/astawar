@@ -4,13 +4,7 @@ import AstaWarMenu from "./AstaWarMenu";
 const AstaWarLayout = () => {
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-        }}
-      >
-        <AstaWarMenu />
-      </div>
+      <AstaWarMenu />
       <AstaWarHeader />
     </>
   );
