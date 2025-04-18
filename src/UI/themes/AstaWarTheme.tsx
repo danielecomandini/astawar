@@ -109,7 +109,7 @@ const AstaWarTheme = createTheme({
           color: AW_COLORS.highlight,
           "&:hover": {
             backgroundColor: AW_COLORS.highlight,
-            color: AW_COLORS.white
+            color: AW_COLORS.white,
           },
         },
       },
