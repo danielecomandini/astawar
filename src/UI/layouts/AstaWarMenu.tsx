@@ -31,7 +31,7 @@ const AstaWarMenu = () => {
                           console.log(`You have clicked ${item.label}`)
                         }
                       >
-                        <ListItemText sx={{ color: AW_COLORS.green }}>
+                        <ListItemText>
                           <AWIcon icon={item.icon} /> {item.label}
                         </ListItemText>
                       </ListItemButton>
@@ -40,20 +40,6 @@ const AstaWarMenu = () => {
                 {index <= ASTA_WAR_MENU.length - 2 && <Divider />}
               </List>
             ))}
-          {/* <ListItem disablePadding>
-            <ListItemButton
-              onClick={() => console.log("You have clicked MENU 1")}
-            >
-              <ListItemText>MENU 1</ListItemText>
-            </ListItemButton>
-          </ListItem>
-          <ListItem disablePadding>
-            <ListItemButton
-              onClick={() => console.log("You have clicked MENU 2")}
-            >
-              <ListItemText>MENU 2</ListItemText>
-            </ListItemButton>
-          </ListItem> */}
         </Box>
       </Drawer>
     </>
