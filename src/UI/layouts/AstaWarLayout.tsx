@@ -1,10 +1,14 @@
+import { useState } from "react";
 import AstaWarHeader from "./AstaWarHeader";
 import AstaWarMenu from "./AstaWarMenu";
+import AstaWarSubscriptionPlan from "../../pages/subscriptions/AstaWarSubscriptionPlan";
 
 const AstaWarLayout = () => {
+  const [user, setUser] = useState(undefined);
   return (
     <>
-      <AstaWarMenu />
+      {user && <AstaWarMenu />}
+      {!user && <AstaWarSubscriptionPlan />}
       <AstaWarHeader />
     </>
   );
