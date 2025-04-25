@@ -2,7 +2,9 @@ import { createTheme } from "@mui/material/styles";
 
 // Define the custom colors
 export const AW_COLORS = {
-  background: "#FFFFFF", // Background Color
+  background: "#EEEEEE", // Background Color
+  headerBg: '#226633',
+  headerText: '#EEEEEE',
   text: "#333333", // Text Color
   highlight: "#43A047", // Important Color
   black: "#000000",
