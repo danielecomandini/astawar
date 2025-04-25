@@ -3,7 +3,6 @@ import AWCard from "../../../UI/elements/AWCard";
 import AWIcon from "../../../UI/elements/AWIcon";
 import AWText from "../../../UI/elements/AWText";
 import { AW_COLORS } from "../../../UI/themes/AstaWarTheme";
-import { Typography } from "@mui/material";
 import AWButton from "../../../UI/elements/AWButton";
 
 const PLANS = [
