@@ -4,6 +4,7 @@ import AWIcon from "../../../UI/elements/AWIcon";
 import AWText from "../../../UI/elements/AWText";
 import { AW_COLORS } from "../../../UI/themes/AstaWarTheme";
 import { Typography } from "@mui/material";
+import AWButton from "../../../UI/elements/AWButton";
 
 const PLANS = [
   {
@@ -81,9 +82,14 @@ const PlanPrice = ({ plan }) => {
       }}
     >
       <AWText variant="h2" fontWeight="bold" color={AW_COLORS.highlight}>
-        € {plan.price}/<span style={{
-          fontSize: '30px'
-        }}>anno</span>
+        € {plan.price}/
+        <span
+          style={{
+            fontSize: "30px",
+          }}
+        >
+          anno
+        </span>
       </AWText>
     </div>
   );
@@ -114,8 +120,8 @@ const PlanFunctionalities = ({ plan }) => {
         width: "90%",
         margin: "0 auto",
         textAlign: "justify",
-        padding: '20px',
-        minHeight: '160px'
+        padding: "20px",
+        minHeight: "160px",
       }}
     >
       {plan.items &&
@@ -131,6 +137,19 @@ const PlanFunctionalities = ({ plan }) => {
           </div>
         ))}
     </div>
+  );
+};
+
+const PlanButton = ({ plan }) => {
+  return (
+    <AWButton
+      style={{
+        margin: "20px",
+      }}
+      onClick={() => console.log(`Comincia con ${plan.id}...`)}
+    >
+      COMINCIA CON {plan.id}
+    </AWButton>
   );
 };
 
@@ -154,6 +173,7 @@ const AstaWarSubscriptionPlanCard = ({ plan }) => {
           <PlanSeparator />
           <PlanFunctionalities plan={plan} />
           <PlanSeparator />
+          <PlanButton plan={plan} />
         </div>
       </div>
     </AWCard>
