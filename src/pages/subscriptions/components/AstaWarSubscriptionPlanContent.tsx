@@ -3,11 +3,45 @@ import AWCard from "../../../UI/elements/AWCard";
 import AWIcon from "../../../UI/elements/AWIcon";
 import AWText from "../../../UI/elements/AWText";
 import { AW_COLORS } from "../../../UI/themes/AstaWarTheme";
+import { Typography } from "@mui/material";
 
 const PLANS = [
-  { id: "BASIC", price: 4.99, items: ["", ""] },
-  { id: "PREMIUM", price: 7.99, items: [""] },
-  { id: "MANAGER", price: 9.99, items: [""] },
+  {
+    id: "BASIC",
+    price: 4.99,
+    description: "Il piano perfetto per i principianti del Fantacalcio.",
+    items: [
+      "Aste online in tempo reale",
+      "Partecipazione a 3 leghe",
+      "Massimo di 8 partecipanti per lega",
+      "Supporto email",
+      "",
+    ],
+  },
+  {
+    id: "PREMIUM",
+    price: 7.99,
+    description: "Per i Fantallenatori che vogliono di più.",
+    items: [
+      "Tutto il piano Basic",
+      "Gestione fino a 5 leghe",
+      "Massimo di 12 partecipanti per lega",
+      "Statistiche avanzate",
+      "Supporto prioritario",
+    ],
+  },
+  {
+    id: "MANAGER",
+    price: 9.99,
+    description: `Tutta la potenza dell'Intelligenza Artificiale a tua disposizione.`,
+    items: [
+      "Tutto il piano Premium",
+      "Leghe illimitate",
+      "Partecipanti illimitati",
+      "Algoritmi di suggerimento IA",
+      "API per integrazioni",
+    ],
+  },
 ];
 
 const PlanSeparator = () => {
@@ -53,6 +87,23 @@ const PlanPrice = ({ plan }) => {
   );
 };
 
+const PlanDescription = ({ plan }) => {
+  return (
+    <AWText
+      variant="h6"
+      color={AW_COLORS.darkGrey}
+      fontWeight="bold"
+      textAlign="justify"
+      style={{
+        marginTop: "20px",
+        marginLeft: "15px",
+      }}
+    >
+      {plan.description}
+    </AWText>
+  );
+};
+
 const PlanFunctionalities = ({ plan }) => {
   return (
     <div
@@ -61,6 +112,8 @@ const PlanFunctionalities = ({ plan }) => {
         width: "90%",
         margin: "0 auto",
         textAlign: "justify",
+        padding: '20px',
+        minHeight: '160px'
       }}
     >
       {plan.items &&
@@ -68,9 +121,10 @@ const PlanFunctionalities = ({ plan }) => {
           <div key={idx}>
             <AWText variant="h7" color={AW_COLORS.highlight} fontWeight="bold">
               {item !== "" && (
-                <AWIcon icon={faCheck} color={AW_COLORS.highlight} />
-              )}{" "}
-              TEXT
+                <>
+                  <AWIcon icon={faCheck} color={AW_COLORS.highlight} /> {item}
+                </>
+              )}
             </AWText>
           </div>
         ))}
@@ -93,6 +147,8 @@ const AstaWarSubscriptionPlanCard = ({ plan }) => {
           <PlanName plan={plan} />
           <PlanSeparator />
           <PlanPrice plan={plan} />
+          <PlanSeparator />
+          <PlanDescription plan={plan} />
           <PlanSeparator />
           <PlanFunctionalities plan={plan} />
           <PlanSeparator />

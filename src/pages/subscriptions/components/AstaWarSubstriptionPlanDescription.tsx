@@ -13,8 +13,9 @@ const AstaWarSubstriptionPlanDescription = () => {
           marginTop: "30px",
           backgroundColor: AW_COLORS.highlight,
           color: AW_COLORS.white,
-          padding: "10px",
+          padding: "20px",
           textAlign: "center",
+          fontSize: '25px'
         }}
       >
         La nuova piattaforma per fare le <b>Aste</b> al Fantacalcio con i tuoi
