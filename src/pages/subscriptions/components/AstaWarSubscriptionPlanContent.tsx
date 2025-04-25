@@ -12,6 +12,7 @@ const PLANS = [
     description: "Il piano perfetto per i principianti del Fantacalcio.",
     items: [
       "Aste online in tempo reale",
+      "Gestione limitata delle aste",
       "Partecipazione a 3 leghe",
       "Massimo di 8 partecipanti per lega",
       "Supporto email",
