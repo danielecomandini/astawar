@@ -1,9 +1,5 @@
-import AstaWarLayout from "./UI/layouts/AstaWarLayout";
+const App = () => {
+  return <>ASTA WAR QUI</>;
+};
 
-export default function App() {
-  return (
-    <>
-      <AstaWarLayout />
-    </>
-  );
-}
+export default App;
