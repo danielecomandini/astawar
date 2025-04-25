@@ -1,8 +1,8 @@
 import { Toolbar } from "@mui/material";
-import AWCard from "../../UI/elements/AWCard";
-import { AW_COLORS } from "../../UI/themes/AstaWarTheme";
+import AWCard from "../../../UI/elements/AWCard";
+import { AW_COLORS } from "../../../UI/themes/AstaWarTheme";
 
-const AstaWarSubscriptionPlan = () => {
+const AstaWarSubstriptionPlanDescription = () => {
   return (
     <>
       <Toolbar />
@@ -24,4 +24,4 @@ const AstaWarSubscriptionPlan = () => {
   );
 };
 
-export default AstaWarSubscriptionPlan;
+export default AstaWarSubstriptionPlanDescription;
