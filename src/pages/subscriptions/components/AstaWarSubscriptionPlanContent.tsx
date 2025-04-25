@@ -81,7 +81,9 @@ const PlanPrice = ({ plan }) => {
       }}
     >
       <AWText variant="h2" fontWeight="bold" color={AW_COLORS.highlight}>
-        € {plan.price}
+        € {plan.price}/<span style={{
+          fontSize: '30px'
+        }}>anno</span>
       </AWText>
     </div>
   );
