@@ -8,8 +8,7 @@ const AstaWarIndex = () => {
   return (
     <>
       <AstaWarHeader />
-      <Toolbar></Toolbar>
-      <section
+        <section
         style={{
           textAlign: "center",
           marginTop: "40px",

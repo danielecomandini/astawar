@@ -6,11 +6,18 @@ import {
 } from "react-router-dom";
 import AstaWarIndex from "./UI/layout/AstaWarIndex";
 import AstaWarHeader from "./UI/layout/components/AstaWarHeader";
+import AstaWarPlanOptions from "./UI/layout/components/AstaWarPlanOptions";
+import { Toolbar } from "@mui/material";
 
 const App = () => {
   return (
     <>
       <AstaWarHeader />
+      <Toolbar
+        sx={{
+          marginBottom: "50px",
+        }}
+      ></Toolbar>
       <Router>
         <Routes>
           {/* Public route */}
@@ -19,8 +26,7 @@ const App = () => {
           {/* Protected area with fixed Layout */}
           <Route path="/" element={<Outlet />}>
             <Route index element={<AstaWarIndex />} />
-            <Route path="dashboard" element={<div>DASHBOARD</div>} />
-            <Route path="settings" element={<div>SETTINGS</div>} />
+            <Route path="plans" element={<AstaWarPlanOptions />} />
           </Route>
         </Routes>
       </Router>
