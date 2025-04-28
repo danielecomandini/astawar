@@ -6,8 +6,8 @@ import {
 } from "react-router-dom";
 import AstaWarIndex from "./pages/index/AstaWarIndex";
 import AstaWarHeader from "./pages/index/components/AstaWarHeader";
-import AstaWarPlanOptions from "./pages/index/components/AstaWarPlanOptions";
 import { Toolbar } from "@mui/material";
+import AstaWarPlansIndex from "./pages/plans/AstaWarPlansIndex";
 
 const App = () => {
   return (
@@ -26,7 +26,7 @@ const App = () => {
           {/* Protected area with fixed Layout */}
           <Route path="/" element={<Outlet />}>
             <Route index element={<AstaWarIndex />} />
-            <Route path="plans" element={<AstaWarPlanOptions />} />
+            <Route path="plans" element={<AstaWarPlansIndex />} />
           </Route>
         </Routes>
       </Router>

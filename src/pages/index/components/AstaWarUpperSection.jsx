@@ -1,8 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import AWButton from "../../../UI/elements/AWButton";
 import AWText from "../../../UI/elements/AWText";
 import { AW_COLORS } from "../../../UI/themes/AstaWarTheme";
 
 const AstaWarUpperSection = () => {
+  const navigate = useNavigate();
+
+  const onViewPlanButtonClickHandler = () => {
+    navigate("/plans");
+  };
+
   return (
     <>
       <AWText
@@ -32,6 +39,7 @@ const AstaWarUpperSection = () => {
           sx={{
             backgroundColor: AW_COLORS.headerBg,
           }}
+          onClick={onViewPlanButtonClickHandler}
         >
           PROVA GRATUITA 7 GIORNI
         </AWButton>
