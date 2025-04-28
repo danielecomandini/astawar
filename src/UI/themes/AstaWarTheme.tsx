@@ -108,9 +108,9 @@ const AstaWarTheme = createTheme({
     MuiListItemButton: {
       styleOverrides: {
         root: {
-          color: AW_COLORS.highlight,
+          color: AW_COLORS.headerBg,
           "&:hover": {
-            backgroundColor: AW_COLORS.highlight,
+            backgroundColor: AW_COLORS.red,
             color: AW_COLORS.white,
           },
         },
