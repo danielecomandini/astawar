@@ -2,6 +2,7 @@ import { Toolbar } from "@mui/material";
 import AstaWarHeader from "./components/AstaWarHeader";
 import AstaWarUpperSection from "./components/AstaWarUpperSection";
 import AstaWarMainFunctionality from "./components/AstaWarMainFunctionality";
+import AstaWarSubscriptionPlans from "./components/AstaWarSubscriptionPlans";
 
 const AstaWarIndex = () => {
   return (
@@ -18,8 +19,9 @@ const AstaWarIndex = () => {
         <AstaWarMainFunctionality />
         <hr style={{
           width: '84.5%',
-          marginTop: '60px'
+          marginTop: '100px'
         }} />
+        <AstaWarSubscriptionPlans />
       </section>
     </>
   );
