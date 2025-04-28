@@ -1,4 +1,3 @@
-import { Toolbar } from "@mui/material";
 import AstaWarHeader from "./components/AstaWarHeader";
 import AstaWarUpperSection from "./components/AstaWarUpperSection";
 import AstaWarMainFunctionality from "./components/AstaWarMainFunctionality";

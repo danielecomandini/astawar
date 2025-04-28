@@ -1,6 +1,6 @@
-import AWButton from "../../elements/AWButton";
-import AWText from "../../elements/AWText";
-import { AW_COLORS } from "../../themes/AstaWarTheme";
+import AWButton from "../../../UI/elements/AWButton";
+import AWText from "../../../UI/elements/AWText";
+import { AW_COLORS } from "../../../UI/themes/AstaWarTheme";
 
 const AstaWarUpperSection = () => {
   return (

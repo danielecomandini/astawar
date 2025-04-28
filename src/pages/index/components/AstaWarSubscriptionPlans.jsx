@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import AWButton from "../../elements/AWButton";
-import { AW_COLORS } from "../../themes/AstaWarTheme";
+import AWButton from "../../../UI/elements/AWButton";
+import { AW_COLORS } from "../../../UI/themes/AstaWarTheme";
 
 const AstaWarSubscriptionPlans = () => {
   const navigate = useNavigate();

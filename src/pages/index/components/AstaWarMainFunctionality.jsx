@@ -1,7 +1,7 @@
 import { MAIN_FUNCTIONALITIES } from "../../../assets/objects/MAIN_FUNCTIONALITIES";
-import AWIcon from "../../elements/AWIcon";
-import AWText from "../../elements/AWText";
-import { AW_COLORS } from "../../themes/AstaWarTheme";
+import AWIcon from "../../../UI/elements/AWIcon";
+import AWText from "../../../UI/elements/AWText";
+import { AW_COLORS } from "../../../UI/themes/AstaWarTheme";
 
 const AstaWarMainFunctionality = () => {
   return (

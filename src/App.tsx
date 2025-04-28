@@ -4,9 +4,9 @@ import {
   Route,
   Outlet,
 } from "react-router-dom";
-import AstaWarIndex from "./UI/layout/AstaWarIndex";
-import AstaWarHeader from "./UI/layout/components/AstaWarHeader";
-import AstaWarPlanOptions from "./UI/layout/components/AstaWarPlanOptions";
+import AstaWarIndex from "./pages/index/AstaWarIndex";
+import AstaWarHeader from "./pages/index/components/AstaWarHeader";
+import AstaWarPlanOptions from "./pages/index/components/AstaWarPlanOptions";
 import { Toolbar } from "@mui/material";
 
 const App = () => {

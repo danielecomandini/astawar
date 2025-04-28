@@ -1,6 +1,6 @@
 import { Drawer, Toolbar } from "@mui/material";
-import { AW_COLORS } from "../../themes/AstaWarTheme";
-import AWText from "../../elements/AWText";
+import { AW_COLORS } from "../../../UI/themes/AstaWarTheme";
+import AWText from "../../../UI/elements/AWText";
 
 const AstaWarHeader = () => {
   return (
