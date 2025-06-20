@@ -4,13 +4,10 @@ import Text from "../../elements/texts/Text";
 import { AW_COLORS } from "../../themes/Theme";
 import MenuButton from "../../elements/buttons/MenuButton";
 import Icon from "../../elements/icons/Icon";
-import { faChartArea, faCogs } from "@fortawesome/free-solid-svg-icons";
+import { MENU_DEFINITION } from "../../../assets/menu/MenuDefinition";
 
 const AppBarNavigationMenu = () => {
-  const MENU = [
-    { id: "dashboard", label: "Dashboard", icon: faChartArea },
-    { id: "settings", label: "Settings", icon: faCogs },
-  ];
+  const MENU = MENU_DEFINITION;
 
   return (
     <AppBar position="static" sx={{ backgroundColor: "#227788" }}>
