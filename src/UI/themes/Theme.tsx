@@ -2,11 +2,11 @@ import { createTheme } from "@mui/material/styles";
 
 
 export const AW_COLORS = {
-  background: '#1A2C3B', // Background Color
-  text: "#FFB300",       // Text Color
-  headerBg: "#227788",   // Background of the AppBar
+  background: "#1A2C3B", // Background Color
+  text:       "#FFB300",       // Text Color
+  headerBg:   "#227788",   // Background of the AppBar
   headerText: "#FFB300", // Text AppBar
-  highlight: "#43A047",  // Buttons and links
+  highlight:  "#FFB300",  // Buttons and links
 };
 
 export const AW_FONT_FAMILY = "Quicksand";
