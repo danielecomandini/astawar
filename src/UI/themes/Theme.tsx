@@ -1,22 +1,12 @@
 import { createTheme } from "@mui/material/styles";
 
-// Define the custom colors
+
 export const AW_COLORS = {
-  background: "#EEEEEE", // Background Color
-  headerBg: "#226633",
-  headerText: "#EEEEEE",
-  text: "#333333", // Text Color
-  highlight: "#43A047", // Important Color
-  black: "#000000",
-  white: "#FFFFFF",
-  blue: "#1976D2",
-  yellow: "#FBC02D",
-  orange: "#FB8C00",
-  green: "#43A047",
-  red: "#E53935",
-  purple: "#8E24AA",
-  grey: "#9E9E9E",
-  darkGrey: "#6B6B6B",
+  background: '#1A2C3B', // Background Color
+  text: "#FFB300",       // Text Color
+  headerBg: "#227788",   // Background of the AppBar
+  headerText: "#FFB300", // Text AppBar
+  highlight: "#43A047",  // Buttons and links
 };
 
 export const AW_FONT_FAMILY = "Quicksand";
@@ -27,20 +17,20 @@ const Theme = createTheme({
   palette: {
     background: {
       default: AW_COLORS.background,
-      paper: AW_COLORS.background,
+      paper: AW_COLORS.headerBg,
     },
     text: {
       primary: AW_COLORS.text,
       secondary: AW_COLORS.highlight,
     },
     primary: {
-      main: AW_COLORS.green,
+      main: AW_COLORS.headerBg,
       contrastText: "#000000",
     },
-    secondary: {
-      main: AW_COLORS.orange,
-      contrastText: AW_COLORS.background,
-    },
+    // secondary: {
+    //   main: AW_COLORS.highlight,
+    //   contrastText: AW_COLORS.background,
+    // },
   },
   typography: {
     fontFamily: AW_FONT_FAMILY,
