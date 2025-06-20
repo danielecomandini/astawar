@@ -4,7 +4,7 @@ import Text from "../../elements/texts/Text";
 import { AW_COLORS } from "../../themes/Theme";
 import MenuButton from "../../elements/buttons/MenuButton";
 import Icon from "../../elements/icons/Icon";
-import { faChartArea, faChartBar, faCogs, faDashboard } from "@fortawesome/free-solid-svg-icons";
+import { faChartArea, faCogs } from "@fortawesome/free-solid-svg-icons";
 
 const AppBarNavigationMenu = () => {
   const MENU = [
