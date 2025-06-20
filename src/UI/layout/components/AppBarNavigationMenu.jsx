@@ -35,7 +35,7 @@ const AppBarNavigationMenu = () => {
               sx={{
                 color: AW_COLORS.highlight,
                 "&.active": {
-                  borderBottom: `5px solid ${AW_COLORS.highlight}`,
+                  borderBottom: `1px solid ${AW_COLORS.highlight}`,
                 },
               }}
             >
