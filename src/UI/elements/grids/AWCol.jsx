@@ -1,8 +1,10 @@
 import { Grid } from "@mui/material";
 
-const AWCol = ({ children, xs, md }) => {
+const AWCol = ({ children, size = 12, textAlign }) => {
   return (
-    <Grid size={{ xs: xs, md: md }}>
+    <Grid size={{ md: size }} sx={{
+      textAlign: textAlign
+    }} justifyItems={textAlign}>
       {children}
     </Grid>
   );
