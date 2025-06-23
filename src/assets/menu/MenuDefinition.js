@@ -1,6 +1,5 @@
 import {
   faCalendar,
-  faChartArea,
   faChartLine,
   faEuro,
   faUser,
