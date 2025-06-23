@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./UI/layout/Layout.jsx";
 import { MENU_DEFINITION } from "./assets/menu/MenuDefinition.js";
-import HomeIndex from "./pages/home/HomeIndex.js";
+import HomeIndex from "./pages/home/HomeIndex.jsx";
 
 const getComponent = (component: String) => {
   const Component = component;
