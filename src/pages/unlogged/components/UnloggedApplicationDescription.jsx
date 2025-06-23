@@ -1,4 +1,3 @@
-import { Avatar } from "@mui/material";
 import AWCol from "../../../UI/elements/grids/AWCol";
 import AWRow from "../../../UI/elements/grids/AWRow";
 
