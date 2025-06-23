@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Icon = ({ icon, ...props }) => {
+const AWIcon = ({ icon, ...props }) => {
   return <FontAwesomeIcon icon={icon} {...props} />;
 };
 
-export default Icon;
+export default AWIcon;

@@ -3,7 +3,7 @@ import Layout from "./UI/layout/Layout.jsx";
 import { MENU_DEFINITION } from "./assets/menu/MenuDefinition.js";
 import HomeIndex from "./pages/home/HomeIndex.jsx";
 
-const getComponent = (component: String) => {
+const getComponent = (component) => {
   const Component = component;
   return <Component />;
 };

@@ -1,9 +1,9 @@
 import { AppBar, Toolbar, Box } from "@mui/material";
 import { NavLink } from "react-router-dom";
-import Text from "../../elements/texts/Text";
+import AWText from "../../elements/texts/AWText";
 import { AW_COLORS } from "../../themes/Theme";
 import MenuButton from "../../elements/buttons/MenuButton";
-import Icon from "../../elements/icons/Icon";
+import Icon from "../../elements/icons/AWIcon";
 import { MENU_DEFINITION } from "../../../assets/menu/MenuDefinition";
 
 const AppBarNavigationMenu = () => {
@@ -13,13 +13,13 @@ const AppBarNavigationMenu = () => {
     <AppBar position="static" sx={{ backgroundColor: "#227788" }}>
       <Toolbar>
         {/* Titolo a sinistra */}
-        <Text
+        <AWText
           variant="h4"
           component="div"
           sx={{ fontWeight: "bold", color: AW_COLORS.headerText }}
         >
           ASTA WAR
-        </Text>
+        </AWText>
 
         {/* Spazio elastico */}
         <Box sx={{ flexGrow: 1 }} />

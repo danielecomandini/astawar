@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 
-const Text = ({ children, ...props }) => {
+const AWText = ({ children, ...props }) => {
   return <Typography {...props}>{children}</Typography>;
 };
 
-export default Text;
+export default AWText;

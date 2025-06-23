@@ -1,8 +1,8 @@
 import { Button } from "@mui/material";
 import { AW_COLORS } from "../../themes/Theme";
-import Icon from "../icons/Icon";
+import Icon from "../icons/AWIcon";
 
-const DefaultButton = ({
+const AWButton = ({
   children,
   color,
   fontSize,
@@ -43,4 +43,4 @@ const DefaultButton = ({
   );
 };
 
-export default DefaultButton;
+export default AWButton;
