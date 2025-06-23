@@ -15,7 +15,6 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={<div>HOME</div>} />
           {MENU.map((route) => (
             <Route
               key={route.id}
