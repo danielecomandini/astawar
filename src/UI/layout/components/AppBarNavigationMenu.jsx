@@ -6,7 +6,7 @@ import MenuButton from "../../elements/buttons/MenuButton";
 import Icon from "../../elements/icons/AWIcon";
 import { MENU_DEFINITION } from "../../../assets/menu/MenuDefinition";
 
-const AppBarNavigationMenu = ({userConnected}) => {
+const AppBarNavigationMenu = () => {
   const MENU = MENU_DEFINITION;
 
   return (
@@ -26,7 +26,7 @@ const AppBarNavigationMenu = ({userConnected}) => {
 
         {/* Menu di navigazione */}
         <Box sx={{ display: "flex", gap: 2 }}>
-          {userConnected && MENU.map((btn) => (
+          {MENU.map((btn) => (
             <MenuButton
               key={btn.id}
               component={NavLink}
