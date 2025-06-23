@@ -1,10 +1,10 @@
 import AppBarNavigationMenu from './components/AppBarNavigationMenu';
 import Container from './components/Container';
 
-const Layout = () => {
+const Layout = ({userConnected}) => {
   return (
     <>
-      <AppBarNavigationMenu />
+      <AppBarNavigationMenu userConnected={userConnected} />
       <Container />
     </>
   );
