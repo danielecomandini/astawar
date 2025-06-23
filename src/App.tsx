@@ -5,6 +5,11 @@ import { MENU_DEFINITION } from "./assets/menu/MenuDefinition.js";
 const App = () => {
   const MENU = MENU_DEFINITION;
 
+  const getComponent = (component: String) => {
+    const Component = component;
+    return <Component />
+  }
+
   return (
     <BrowserRouter>
       <Routes>
@@ -14,7 +19,7 @@ const App = () => {
             <Route
               key={route.id}
               path={`/${route.id}`}
-              element={<div>{route.label}</div>}
+              element={getComponent( route.component )}
             />
           ))}
         </Route>
