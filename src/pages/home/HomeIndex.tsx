@@ -1,5 +1,8 @@
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import DefaultButton from "../../UI/elements/buttons/DefaultButton";
+
 const HomeIndex = () => {
-  return <div>THIS IS HOME INDEX</div>;
+  return <DefaultButton icon={faUser}>BUTTON</DefaultButton>;
 };
 
 export default HomeIndex;
