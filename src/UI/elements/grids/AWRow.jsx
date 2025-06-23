@@ -1,8 +1,8 @@
 import { Box, Grid } from "@mui/material";
 
-const AWRow = ({ children, spacing }) => {
+const AWRow = ({ children, spacing, sx }) => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ ...sx, flexGrow: 1 }}>
       <Grid
         container
         spacing={spacing || 4}
