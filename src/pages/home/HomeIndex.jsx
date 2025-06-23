@@ -4,7 +4,7 @@ import AWCard from "../../UI/elements/cards/AWCard";
 
 const HomeIndex = () => {
   return (
-    <AWCard header={<div style={{ color: "red" }}>GENIO DIV</div>}>
+    <AWCard header={<div style={{ fontWeight: 'bold' }}>GENIO DIV</div>}>
       CONTENT QUI
     </AWCard>
   );
