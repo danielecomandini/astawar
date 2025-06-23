@@ -2,14 +2,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./UI/layout/Layout.jsx";
 import { MENU_DEFINITION } from "./assets/menu/MenuDefinition.js";
 
+const getComponent = (component: String) => {
+  const Component = component;
+  return <Component />
+}
+
 const App = () => {
   const MENU = MENU_DEFINITION;
 
-  const getComponent = (component: String) => {
-    const Component = component;
-    return <Component />
-  }
-
+  
   return (
     <BrowserRouter>
       <Routes>
