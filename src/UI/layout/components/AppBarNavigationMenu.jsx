@@ -34,6 +34,7 @@ const AppBarNavigationMenu = () => {
               color="inherit"
               sx={{
                 color: AW_COLORS.highlight,
+                fontWeight: 'bold',
                 "&.active": {
                   borderBottom: `1px solid ${AW_COLORS.highlight}`,
                 },
